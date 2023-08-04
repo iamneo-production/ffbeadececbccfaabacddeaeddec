@@ -67,5 +67,11 @@
  
     </plugins>
   </build>
-
+  <distributionManagement>
+    <repository>
+      <id>internal.repo</id>
+      <name>Internal Repository</name>
+      <url>file://${project.build.directory}/mvn-repo</url>
+    </repository>
+  </distributionManagement>
 </project>
